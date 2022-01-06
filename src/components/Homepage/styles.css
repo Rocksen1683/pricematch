@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #071436;
+}
+
+.navbar {
+  background-color: #071436;
+  height: fixed;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #FF66C4;
+  font-family: "Fredoka One";
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 10px;
+  font-family: "Nunito";
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: rgb(129, 192, 235);
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #FF66C4;
+  transition: width 0.8s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.8s;
+}
+
+.banner {
+    height: 60vh;
+    padding-top: 60px;
+    color: #071436; 
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.banner-image {
+  padding-left: 140px;
+}
+
+.heading {
+  font-family: "Fredoka One", "sans-serif";
+  /* width: 80%; */
+}
+
+.display-4 {
+  position: relative;
+  padding-bottom: 2px;
+  text-decoration: none;
+  font-size:45px;
+}
+
+.banner-description {
+  font-size: 23px;
+  font-family: "Lato", "Helvetica Neue",
+}
+.buttons > button {
+    margin: 20px 10px;
+}
+
+.btn-outline-info {
+  border-color : #FF66C4;
+  color: #FF66C4;
+  transition: all 0.25s;
+  padding: 15px;
+}
+
+.btn-outline-info:hover {
+  background-color : #FF66C4;
+  color: white;
+  border: none;
+}
+
+.btn-info {
+  background-color: #071436;
+  padding: 15px;
+}
+
+.btn-info:hover {
+  background-color: white;
+  border-color: #071436;
+  color: #071436;
+}
+
+.features {
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.feature {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-description {
+  font-family: "Lato";
+  width: 60%;
+  margin-top: -40px;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.team-section {
+  background-color: #071436;
+  margin-top: 50px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.section-title {
+  padding-top: 30px;
+  font-family: "Fredoka One";
+  color: white;
+  font-size: 30px;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: rgb(227 227 227 / 30%) 0px 26px 30px -10px,
+    rgb(227 227 227/ 40%) 0px 16px 10px -10px;
+}
+
+.card:hover {
+  box-shadow: rgb(227 227 227 / 60%) 0px 40px 50px -10px,
+    rgb(227 227 227 / 50%) 0px 30px 22px -10px;
+  transform: scale(1.01);
+  border-color: rgb(249, 249, 249, 0.8);
+}
+
+footer {
+  color: #000;
+  background-color: #fff;
+  width: 95%;
+  border-radius: 20px 20px 0px 0px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  padding-left: 20px;
+}
+
+.shops {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 0.5fr));
+}
+
+.file-upload {
+  margin: 40px;
+}
